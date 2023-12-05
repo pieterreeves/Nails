@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+	    <title> Price List</title>
+		
+		<link href="assets/css/styles.css" rel="stylesheet" type="text/css"> 
+	</head>
+			
+	<body style="background-color:#ff00ff;">
+	<div style="display:flow-root">
+		<div style="float:left;">
+			<img src="assets/images/logo.jpg" width="200" height="200"> 
+		</div>
+		<div class="topnav">
+			<ul class="nav-menu">
+			<a href="/home">Home</a> 
+	        <a href="/about">About</a>
+			<a href="/services">Services</a>
+			<a href="/contact">Contact</a>
+			<a class="active"href="/pricelist">Price list</a>
+			<a href="/book appointment">Book Appointment</a>
+		</div>		
+		
+		 <h1 style="color:white;">Hands/Feet</h1>
+	</div>
+	
+<div id="divGet">
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Price</th>
+		</tr>
+		
+		<% if (pricelistData.length !=0) {var i=1; pricelistData.forEach( function(data) {
+		%>
+		<tr>
+			<td><%=data.name %></td>
+			<td><%=data.price %></td>
+			
+		</tr>
+		<% i++; }) %> <%}%>
+		
+	</table>
+	</div>	
+	
+<p>
+	
+			<img src="/assets/images/salon54.jpg"width="1250">
+			
+			<img src="/assets/images/salon30.jpg"width="1250">
+			
+			    		
+		
+        <p>
+		
+    </body>
+</html>	
+			

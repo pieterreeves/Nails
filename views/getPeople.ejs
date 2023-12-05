@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<title>List of People</title>
+	
+
+</head>
+<body>
+	
+	<div id="divGet">
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Age</th>
+			<th>Email</th>
+		</tr>
+		
+		<% if (peopleData.length !=0) {var i=1; peopleData.forEach( function(data) {
+		%>
+		<tr>
+			<td><%=data.id %></td>
+			<td><%=data.age %></td>
+			<td><%=data.email %></td>
+		</tr>
+		<% i++; }) %> <%}%>
+		
+	</table>
+	</div>
+	
+</body>
+</html>
